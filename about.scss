@@ -1,0 +1,118 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+aside {
+  background: #f8f9fa;
+  height: 400px;
+  h1 {
+    font-size: 50px;
+  }
+  a {
+    color: #f23a2e;
+    text-decoration: none;
+  }
+}
+main#about {
+  padding: 100px;
+  p {
+    width: 600px;
+  }
+}
+main#podcasters {
+  padding: 100px 0;
+  div {
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+    p {
+      width: 400px;
+      text-align: center;
+    }
+    i {
+      color: #f23a2e;
+      &:hover {
+        color: #b12b22;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+    div.para {
+      flex-direction: column;
+    }
+    img {
+      width: 700px;
+    }
+  }
+  main#podcasters {
+    flex-direction: column;
+    div.podcast1 {
+      flex-direction: column;
+      width: 360px;
+      p {
+        width: 330px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+    div.para {
+      flex-direction: column;
+    }
+    img {
+      width: 500px;
+    }
+  }
+  main#podcasters {
+    flex-direction: column;
+    div.podcast1 {
+      flex-direction: column;
+      width: 360px;
+      p {
+        width: 330px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+    div.para {
+      flex-direction: column;
+      p {
+        width: 400px;
+      }
+    }
+    img {
+      width: 400px;
+    }
+  }
+  main#podcasters {
+    flex-direction: column;
+    div.podcast1 {
+      flex-direction: column;
+      width: 360px;
+      p {
+        width: 330px;
+      }
+    }
+  }
+}

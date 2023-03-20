@@ -1,0 +1,127 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+aside {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHdvJTIwcGVvcGxlJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60);
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-size: 50px;
+  }
+  a {
+    color: #f23a2e;
+    text-decoration: none;
+  }
+}
+main#form {
+  form {
+    width: 700px;
+    padding: 30px;
+    textarea {
+      width: 640px;
+      height: 150px;
+      border: none;
+      border: 1px solid gray;
+      &:focus {
+        border: 1px solid #17a2b8;
+      }
+    }
+    input {
+      border: 1px solid gray;
+      &:focus {
+        border: 1px solid #17a2b8;
+        box-shadow: none;
+      }
+    }
+    button {
+      width: 150px;
+      height: 60px;
+      font-size: 15px;
+    }
+  }
+  .margin {
+    padding: 5px 0;
+  }
+  span {
+    color: #f23a2e;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#form {
+    form {
+      width: 500px;
+      textarea {
+        width: 400px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#form {
+    display: flex;
+    flex-direction: column;
+    form {
+      width: 650px;
+      flex-direction: column;
+      .row {
+        flex-direction: column;
+        width: 650px;
+      }
+      input {
+        width: 600px;
+      }
+      textarea {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  section#subscribe {
+    p {
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#form {
+    display: flex;
+    flex-direction: column;
+    form {
+      width: 350px;
+      flex-direction: column;
+      .row {
+        flex-direction: column;
+        width: 350px;
+      }
+      input {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  section#subscribe {
+    p {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+aside {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHdvJTIwcGVvcGxlJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60);
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-size: 50px;
+  }
+  a {
+    color: #f23a2e;
+    text-decoration: none;
+  }
+}
+main#forms {
+  form {
+    width: 500px;
+    padding: 40px;
+  }
+  span {
+    color: #f23a2e;
+  }
+  .margin {
+    padding: 5px 0;
+  }
+  button {
+    margin: 10px 0;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#forms {
+    display: flex;
+    flex-direction: column;
+    form {
+      width: 400px;
+    }
+  }
+}
