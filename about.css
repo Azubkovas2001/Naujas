@@ -1,0 +1,118 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+aside {
+  background: #f8f9fa;
+  height: 400px;
+}
+aside h1 {
+  font-size: 50px;
+}
+aside a {
+  color: #f23a2e;
+  text-decoration: none;
+}
+
+main#about {
+  padding: 100px;
+}
+main#about p {
+  width: 600px;
+}
+
+main#podcasters {
+  padding: 100px 0;
+}
+main#podcasters div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+main#podcasters div p {
+  width: 400px;
+  text-align: center;
+}
+main#podcasters div i {
+  color: #f23a2e;
+}
+main#podcasters div i:hover {
+  color: #b12b22;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+  }
+  main#about div.para {
+    flex-direction: column;
+  }
+  main#about img {
+    width: 700px;
+  }
+  main#podcasters {
+    flex-direction: column;
+  }
+  main#podcasters div.podcast1 {
+    flex-direction: column;
+    width: 360px;
+  }
+  main#podcasters div.podcast1 p {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 600px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+  }
+  main#about div.para {
+    flex-direction: column;
+  }
+  main#about img {
+    width: 500px;
+  }
+  main#podcasters {
+    flex-direction: column;
+  }
+  main#podcasters div.podcast1 {
+    flex-direction: column;
+    width: 360px;
+  }
+  main#podcasters div.podcast1 p {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 425px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  main#about {
+    padding: 20px;
+  }
+  main#about div.para {
+    flex-direction: column;
+  }
+  main#about div.para p {
+    width: 400px;
+  }
+  main#about img {
+    width: 400px;
+  }
+  main#podcasters {
+    flex-direction: column;
+  }
+  main#podcasters div.podcast1 {
+    flex-direction: column;
+    width: 360px;
+  }
+  main#podcasters div.podcast1 p {
+    width: 330px;
+  }
+}/*# sourceMappingURL=about.css.map */
